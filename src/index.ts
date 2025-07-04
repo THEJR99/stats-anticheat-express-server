@@ -1,5 +1,5 @@
 import * as dotenv from 'dotenv';
-dotenv.config()
+dotenv.config();
 
 import express from 'express';
 import http from 'http';

@@ -26,4 +26,15 @@ function test2() {
 
     console.log(parsed)
 }
-test2()
+
+function test3() {
+    const d = new Date()
+
+    console.log(d.getUTCMonth())
+}
+
+
+
+// test1()
+// test2()
+test3()

@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  
+  express-server:
+    image: node:22-alpine
+    container_name: saces
+    working_dir: /src
+    ports:
+      - "5050:5050"
+    env_file:
+      - .env
+    volumes:
+      - ../volumes/:/src/chunks
+    command: ["npm", "start"]
